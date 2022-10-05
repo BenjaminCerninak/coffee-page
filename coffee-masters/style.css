@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-coffee-masters {
+  height: 40px;
+  margin-right: 6px;
+}
+
+.logo-and-name {
+  display: flex;
+
+  justify-content: center;
+
+  padding: 0.4rem;
+  background-color: #43281c;
+  color: #fbf2c0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+p,
+h1,
+h2,
+span,
+legend,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  margin: 0 7%;
+}
+h1 {
+  margin-top: 10px;
+
+  font-weight: lighter;
+}
+
+.content {
+  border-radius: 8px;
+  background-color: #fbece0;
+  box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.1);
+}
+.left-side-content {
+  grid-area: left-side-content;
+
+  height: 330px;
+  /* display: flex; */
+  flex-direction: column;
+  row-gap: 10px;
+}
+.right-upper-content {
+  grid-area: right-upper-content;
+
+  height: 130px;
+}
+.right-bottom-content {
+  grid-area: right-bottom-content;
+
+  height: 220px;
+}
+
+.items {
+  margin: 0.4rem;
+  width: 96%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  row-gap: 10px white;
+}
+.item-3 {
+  border: none;
+}
+h2 {
+  color: #9c8166;
+  font-weight: 500;
+  padding: 0.3rem;
+  font-size: 1rem;
+  margin-left: 0.78rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.8rem;
+  row-gap: 1.3rem;
+  margin: 3% 6.3%;
+  grid-template-areas:
+    "left-side-content right-upper-content"
+    "left-side-content right-bottom-content"
+    "left-side-content right-bottom-content";
+  margin-bottom: 10rem;
+}
+
+main {
+  margin: 30px;
+}
+
+.one-line {
+  padding: 1rem;
+  padding-bottom: 0.37rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.times {
+  width: 6%;
+  font-size: 1rem;
+}
+.coffee {
+  width: 74%;
+}
+.price {
+  width: 10%;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.coffee-info {
+  font-size: 0.8rem;
+  color: #9c8166;
+  font-weight: 480;
+}
+
+.info-line {
+  padding-top: 0;
+}
+
+hr {
+  height: 0.18rem;
+  background-color: #f1ddc9;
+  border: none;
+}
+
+.hr-left-content {
+  margin: 0.4rem;
+}
+
+.item-2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.item-3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.text-in-field {
+  color: #8f8976;
+  margin-left: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  font-weight: 500;
+}
+fieldset {
+  margin: 1rem 0.3rem;
+  border-radius: 50px;
+  border: 0.2rem solid #c4b19b;
+  box-sizing: border-box;
+  width: inherit;
+  padding-bottom: 0.4rem;
+}
+legend {
+  margin-left: 2.4rem;
+  padding: 0.2rem;
+}
+.h2-payment,
+.h2-name {
+  padding-bottom: 0.3rem;
+  padding-top: 0.7rem;
+}
+.cvv {
+  width: 11rem;
+}
+
+.one-liner {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.7rem;
+}
+
+.subtotal,
+.tax,
+.total {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.btn-place-order {
+  display: flex;
+  justify-content: center;
+}
+.order-btn {
+  margin-top: 1rem;
+  width: 80%;
+  background-color: #cba681;
+  border-radius: 50px;
+  border: none;
+  height: 3rem;
+  font-weight: 400;
+}
